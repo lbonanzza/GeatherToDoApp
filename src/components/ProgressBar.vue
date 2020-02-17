@@ -36,9 +36,9 @@
 <script>
   export default {
     data: () => ({
-      skill: 20,
-      knowledge: 33,
-      power: 78,
+      skill: 50,
+      knowledge: 23,
+      power: 18,
     }),
   }
 </script>
