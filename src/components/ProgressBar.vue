@@ -1,44 +1,22 @@
 <template>
-  <div>
-    <v-progress-linear
-      v-model="power"
-      color="amber"
-      height="25"
-      reactive
-    ></v-progress-linear>
-
-    <br>
-
-    <v-progress-linear
-      v-model="skill"
-      color="blue-grey"
-      height="25"
-      reactive
-    >
-      <template v-slot="{ value }">
-        <strong>{{ Math.ceil(value) }}%</strong>
-      </template>
-    </v-progress-linear>
-
-    <br>
-
-    <v-progress-linear
-      v-model="knowledge"
-      height="25"
-      reactive
-    >
-      <strong>{{ Math.ceil(knowledge) }}%</strong>
-    </v-progress-linear>
-  </div>
+  <v-container class="container">
+    <v-progress-linear height="5" value="5"></v-progress-linear>
+  </v-container>
 </template>
 
 
 <script>
-  export default {
-    data: () => ({
-      skill: 50,
-      knowledge: 23,
-      power: 18,
-    }),
-  }
+export default {
+  data: () => ({})
+};
 </script>
+
+
+<style scoped>
+.container {
+  max-width: 500px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>>

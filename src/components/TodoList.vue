@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="todoItem">
     <ul>
       <TodoItem
         v-for="todo of todos"
@@ -28,11 +28,11 @@ export default {
 };
 </script>
 
-<!--<style scoped>-->
-<!--  ul {-->
-<!--    list-style: none;-->
-<!--    margin: 11px;-->
-<!--    padding: 11px;-->
-<!--    align-content: center;-->
-<!--  }-->
-<!--</style>-->
+<style scoped>
+  .todoItem {
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 500px;
+  }
+</style>

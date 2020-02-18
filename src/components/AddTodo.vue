@@ -29,7 +29,10 @@ export default {
 };
 </script>
 
-<style lang="sass" scoped>
-
+<style scoped>
+  .v-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
 </style>>
  

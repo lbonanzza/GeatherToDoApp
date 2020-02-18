@@ -1,11 +1,13 @@
 <template>
-  <div id="app">
-    <h1>Todo</h1>
-    <hr />
-    <ProgerssBar />
-    <AddTodo @create-todo="createTodo" />
-    <TodoList class="todo" v-bind:todos="todos" @remove-todo="removeTodo " />
-  </div>
+  <v-app>
+    <div id="app">
+      <h1>Todo</h1>
+      <hr />
+      <AddTodo @create-todo="createTodo" />
+      <ProgerssBar />
+      <TodoList class="todo" v-bind:todos="todos" @remove-todo="removeTodo " />
+    </div>
+  </v-app>
 </template>
 
 <script>
